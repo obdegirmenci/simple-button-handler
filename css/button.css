@@ -1,0 +1,83 @@
+:root {
+    --btn-primary: hsl(195, 62%, 52%);
+    --btn-primary--hover: hsl(195, 62%, 48%);
+    --btn-primary--active: hsl(195, 62%, 44%);
+
+    --btn-secondary: hsl(207, 13%, 92%);
+    --btn-secondary--hover: hsl(207, 13%, 88%);
+    --btn-secondary--active: hsl(207, 13%, 84%);
+
+    --btn-tertiary: hsl(207, 13%, 92%);
+    --btn-tertiary--hover: hsl(207, 13%, 88%);
+    --btn-tertiary--active: hsl(207, 13%, 84%);
+    
+    --btn-info: #4c5d6d;
+    --btn-success: #46ae77;
+    --btn-warning: #c49e3f;
+    --btn-danger: #f44336;
+    --btn-radius: 0.4em;
+}
+
+.btn-primary, .btn-secondary, .btn-tertiary {
+    padding: 0.8em 1.6em;
+    border: none;
+    border-radius: var(--btn-radius);
+    flex: 1 1 0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.btn-primary:focus, .btn-secondary:focus, .btn-tertiary:focus {
+    outline: 0;
+}
+
+.btn-primary:focus-visible, .btn-secondary:focus-visible, .btn-tertiary:focus-visible {
+    outline: 0.2rem solid var(--btn-info);
+    outline-offset: 0px;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: var(--btn-primary);
+    color: var(--light-shade);
+}
+
+    .btn-primary--hover {
+        background: var(--btn-primary--hover);
+    }
+
+    .btn-primary--active {
+        background: var(--btn-primary--active);
+    }
+
+/* Secondary Button */
+.btn-secondary {
+    background: var(--btn-secondary);
+    color: var(--dark-accent);
+}
+
+    .btn-secondary--hover {
+        background: var(--btn-secondary--hover);
+    }
+
+    .btn-secondary--active {
+        background: var(--btn-secondary--active);
+    }
+
+/* Tertiary Button */
+.btn-tertiary {
+    background: none;
+    box-shadow: 0 0 0 2px var(--btn-tertiary) inset;
+    color: var(--dark-accent);
+}
+
+    .btn-tertiary--hover {
+        background: var(--btn-tertiary);
+        box-shadow: 0 0 0 2px var(--btn-tertiary--hover) inset;
+    }
+
+    .btn-tertiary--active {
+        background: var(--btn-tertiary--hover);
+        box-shadow: 0 0 0 2px var(--btn-tertiary--active) inset;
+    }
